@@ -28,8 +28,8 @@ registerMicroApps(arr);
 start({
   prefetch: true, //是否开启预加载，默认为 true
   sandbox : { 
-    strictStyleIsolation: true , 
-    experimentalStyleIsolation: true 
+    strictStyleIsolation: false , 
+    experimentalStyleIsolation: false 
   }//是否开启沙箱，默认为 true
 });
 

@@ -1,9 +1,3 @@
-/*
- * @Author: 裴子璇
- * @Date: 2022-08-22 17:17:01
- * @LastEditTime: 2022-08-22 18:51:17
- * @Description:
- */
 const { name } = require("./package");
 module.exports = {
   devServer: {

@@ -1,8 +1,8 @@
-import "./public-path";
 import Vue from "vue";
 import VueRouter from "vue-router";
 import App from "./App.vue";
 import routes from "./router";
+import "./public-path";
 // import store from "./store";
 
 Vue.config.productionTip = false;
@@ -10,6 +10,7 @@ Vue.config.productionTip = false;
 let router = null;
 let instance = null;
 function render(props = {}) {
+  // console.log(arguments);
   const { container } = props;
   router = new VueRouter({
     base: window.__POWERED_BY_QIANKUN__ ? '/app-vue/' : '/',
@@ -23,7 +24,6 @@ function render(props = {}) {
     render: (h) => h(App),
   }).$mount(container ? container.querySelector("#app") : "#app");
 }
-
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
   render();

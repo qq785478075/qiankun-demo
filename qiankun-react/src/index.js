@@ -1,9 +1,3 @@
-/*
- * @Author: 裴子璇
- * @Date: 2022-08-22 17:06:18
- * @LastEditTime: 2022-08-23 11:47:08
- * @Description:  
- */
 import "./public-path"
 import React from 'react';
 import ReactDOM from 'react-dom';
