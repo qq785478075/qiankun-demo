@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import { registerMicroApps, start } from "qiankun";
 import './utils/config.js'
 import {initThemeColor } from './utils/themColorClient.js'
+require('./scss/defines.scss')
 Vue.config.productionTip = false;
 Vue.use(ElementUI)
 initThemeColor ()

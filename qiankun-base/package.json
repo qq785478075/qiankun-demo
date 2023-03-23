@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.15.13",
+    "node-sass": "^6.0.1",
     "qiankun": "^2.7.4",
+    "sass-loader": "^10.2.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "webpack-theme-color-replacer": "^1.4.6"

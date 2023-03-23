@@ -16,3 +16,12 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+@import "../scss/defines.scss";
+
+.home{
+  width: 100%;
+  height: 100%;
+  background-color: $--color--primary--background;
+}
+</style>
