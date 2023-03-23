@@ -8785,6 +8785,11 @@
     "source-list-map" "^2.0.0"
     "source-map" "~0.6.1"
 
+"webpack-theme-color-replacer@^1.4.6":
+  "integrity" "sha512-IUy4Mz3jGSe+g1S/7RRv0J67hqMDa2KxcdI7g9cAG55OvRt2D5y1rbidSIziuoL+cCCPwVCSd2LSDDbo9F+mAw=="
+  "resolved" "https://registry.npmmirror.com/webpack-theme-color-replacer/-/webpack-theme-color-replacer-1.4.6.tgz"
+  "version" "1.4.6"
+
 "webpack@^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^2.0.0 || ^3.0.0 || ^4.0.0", "webpack@^3.0.0 || ^4.1.0 || ^5.0.0-0", "webpack@^4.0.0", "webpack@^4.0.0 || ^5.0.0", "webpack@^4.1.0 || ^5.0.0-0", "webpack@^4.4.0", "webpack@>=2", "webpack@>=2.0.0 <5.0.0", "webpack@>=4.0.0":
   "integrity" "sha512-6jJuJjg8znb/xRItk7bkT0+Q7AHCYjjFnvKIWQPkNIOyRqoCGvkOs0ipeQzrqz4l5FtN5ZI/ukEHroeX/o1/5Q=="
   "resolved" "https://registry.npmmirror.com/webpack/-/webpack-4.46.0.tgz"

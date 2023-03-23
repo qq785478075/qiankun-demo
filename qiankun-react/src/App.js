@@ -1,16 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, {useState, useEffect} from 'react'
 function App() {
-  const [activitesRef, setactivitesRef] = useState({})
-  useEffect(()=>{
-    let current = ['1','2','3']
-    setactivitesRef({
-      current: current
-    })
-  }, [])
-
-  console.log(activitesRef);
   return (
     <div className="App">
       <header className="App-header">

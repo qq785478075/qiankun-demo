@@ -4,8 +4,11 @@ import router from "./router";
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import { registerMicroApps, start } from "qiankun";
+import './utils/config.js'
+import {initThemeColor } from './utils/themColorClient.js'
 Vue.config.productionTip = false;
 Vue.use(ElementUI)
+initThemeColor ()
 new Vue({
   router,
   render: (h) => h(App),

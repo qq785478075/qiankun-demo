@@ -1,6 +1,8 @@
 <template>
   <el-container>
-    <el-header class="header">Header</el-header>
+    <el-header class="header">
+      <el-color-picker v-model="mainColor" size="small" @change="changeColor"></el-color-picker>
+    </el-header>
     <el-container class="container">
       <el-aside class="aside" width="auto">
         <!-- <router-link to="/app-vue">vue</router-link> |
@@ -12,10 +14,10 @@
         >
           <el-menu-item index="/">
             <template slot="title">
-              <router-link to="/">
+              <el-link type="primary" :underline="false" to="/">
                 <i class="el-icon-s-order"></i>
                 主页
-              </router-link>
+              </el-link>
             </template>
           </el-menu-item>
           <el-menu-item index="/app-vue">
@@ -50,12 +52,23 @@
   </el-container>
 </template>
 <script>
+import { changeThemeColor, curColor } from './utils/themColorClient'
 export default {
   data() {
     return {
       isCollapse: false,
+      mainColor:curColor
     };
   },
+  methods:{
+    changeColor(newColor) {
+      changeThemeColor(newColor)
+      // .then((t) => {
+      //   console.log('123465')
+      //   console.log(t);
+      // })
+    }
+  }
 };
 </script>
 <style>
