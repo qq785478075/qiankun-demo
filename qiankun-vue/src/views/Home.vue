@@ -2,8 +2,8 @@
   <div id="app">
     <h1>vue-micro-Home</h1>
     <img alt="Vue logo" src="../assets/logo.png">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/" class="el-link el-link--primary">Home</router-link> |
+    <router-link to="/about" class="el-link el-link--primary">About</router-link>
   </div>
 </template>
 

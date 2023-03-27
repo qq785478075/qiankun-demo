@@ -4,16 +4,18 @@ import App from "./App.vue";
 import routes from "./router";
 import "./public-path";
 // import store from "./store";
-
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import {initThemeColor } from './utils/themColorClient.js'
+Vue.use(ElementUI)
 Vue.config.productionTip = false;
-
 let router = null;
 let instance = null;
 function render(props = {}) {
   // console.log(arguments);
   const { container } = props;
   router = new VueRouter({
-    base: window.__POWERED_BY_QIANKUN__ ? '/app-vue/' : '/',
+    base: window.__POWERED_BY_QIANKUN__ ?  '/app-vue/' : '/',
     mode: "history",
     routes,
   });
@@ -23,6 +25,7 @@ function render(props = {}) {
     // store,
     render: (h) => h(App),
   }).$mount(container ? container.querySelector("#app") : "#app");
+  initThemeColor()
 }
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
@@ -37,7 +40,6 @@ export async function mount(props) {
   render(props);
 }
 export async function unmount() {
-  console.log(instance);
   instance.$destroy();
   instance.$el.innerHTML = "";
   instance = null;
